@@ -5,6 +5,7 @@
 }
 
 .status {
+  font-weight: bolder;
   margin-bottom: 10px;
   text-align: center;
 }
