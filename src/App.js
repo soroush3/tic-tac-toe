@@ -18,6 +18,10 @@ function App() {
           <li>
             <Link to="/Ultimate-Tic-Tac-Toe">Ultimate Tic-Tac-Toe</Link>
           </li>
+          <li>
+            <a href="https://ultimate-t3.herokuapp.com/rules" target="_blank">
+              Rules for Ultimate Tic-Tac-Toe </a>
+          </li>
         </ul>
       </nav>
       </div>
