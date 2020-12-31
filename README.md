@@ -9,3 +9,8 @@ I then went on and created the Ultimate Tic-Tac-Toe version with the knowledge
 from that tutorial.
 
 My CSS and HTML abilities are still at a beginner level.
+
+To run the application, clone or download it. Point your terminal to the root
+directory and run 'npm start' (make sure you have node js installed).
+
+The application will open up in your browser.
