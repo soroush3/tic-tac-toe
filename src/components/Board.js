@@ -25,6 +25,7 @@ function Square(props) {
     <button 
     className="square"
     onClick={props.onClick}
+    id={props.id}
     >
       {props.value}
     </button>
@@ -67,10 +68,11 @@ class Board extends React.Component {
     }
   }
 
-  renderSquare(i) {
+  renderSquare(i, id) {
     return <Square 
     value={this.state.squares[i]} 
     onClick= {() => this.handleClick(i)}
+    id={id}
     />
   }
 
@@ -102,21 +104,21 @@ class Board extends React.Component {
         <br></br>
         <div className="status"> {status} </div>
         <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+          {this.renderSquare(0, 'square_0')}
+          {this.renderSquare(1, 'square_1')}
+          {this.renderSquare(2, 'square_2')}
         </div>
 
         <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
+          {this.renderSquare(3, 'square_3')}
+          {this.renderSquare(4, 'square_4')}
+          {this.renderSquare(5, 'square_5')}
         </div>
 
         <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
+          {this.renderSquare(6, 'square_6')}
+          {this.renderSquare(7, 'square_7')}
+          {this.renderSquare(8, 'square_8')}
         </div>
         <div style={{textAlign: "center"}}>
           <button 
